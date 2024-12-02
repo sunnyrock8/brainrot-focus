@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "brainrot_focus_backend": {
+      "main": "src/brainrot_focus_backend/main.mo",
+      "type": "motoko"
+    },
+    "brainrot_focus_frontend": {
+      "dependencies": [
+        "brainrot_focus_backend"
+      ],
+      "source": [
+        "src/brainrot_focus_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "brainrot_focus_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
